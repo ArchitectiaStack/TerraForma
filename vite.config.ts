@@ -1,11 +1,11 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite'; // 1. زد هاد السطر
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  base: "TerraForma/", // <--- Zid had s-satar hna
-  optimizeDeps: {
-    exclude: ['lucide-react'],
-  },
+  plugins: [
+    react(),
+    tailwindcss(), // 2. زد هاد الـ Plugin
+  ],
+  base: "/TerraForma/", // 3. استعمل المسار الكامل للريبو ديالك
 });
