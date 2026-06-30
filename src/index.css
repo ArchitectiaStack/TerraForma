@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-bronze: #bfa37c;
+  --color-bronze-dark: #a88d66;
+  --color-charcoal-deep: #0f0f0f;
+  --color-charcoal-light: #1a1a1a;
+  --color-cream: #f4f4f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom horizontal scrollbar for process or material details if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
